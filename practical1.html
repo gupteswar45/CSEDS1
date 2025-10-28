@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Registration Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign up for GitHub</h2>
+        <form action="register_success.html" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Enter a valid email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required minlength="8">
+
+            <button type="submit">Create account</button>
+        </form>
+        <div class="note">
+            Already have an account? <a href="#">Sign in</a>
+        </div>
+    </div>
+</body>
+</html>
