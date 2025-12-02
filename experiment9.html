@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Responsive Product Grid</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid #555;
+        background: white;
+    }
+
+    .grid{
+        display: grid;
+        gap: 20px;
+
+        /* MOBILE DEFAULT → 1 CARD */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* TABLET ≤1024px → 2 CARDS */
+    @media (min-width: 600px) and (max-width: 1024px){
+        .grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* DESKTOP → 4 CARDS */
+    @media (min-width: 1025px){
+        .grid{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .card{
+        background: white;
+        border-radius: 6px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+        width: 100%;
+        height: 120px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .title{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .desc{
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .price{
+        font-weight: bold;
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Responsive Product Grid</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src=" https://m.media-amazon.com/images/I/71TMpelvOOL._SY741_.jpg" alt="Product 1">
+            <div class="title">Product 1</div>
+            <div class="desc">High-quality item with great features.</div>
+            <div class="price">₹1499</div>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61ChcsEZsrL._SY741_.jpg" alt="Product 2">
+            <div class="title">Product 2</div>
+            <div class="desc">Durable and stylish for daily use.</div>
+            <div class="price">₹27999</div>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61faDMBMdmL._SX522_.jpg" alt="Product 3">
+            <div class="title">Product 3</div>
+            <div class="desc">Lightweight and comfortable.</div>
+            <div class="price">₹1,299</div>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/7192GnqZJoL._SX679_.jpg" alt="Product 4">
+            <div class="title">Product 4</div>
+            <div class="desc">Trendy design with premium quality.</div>
+            <div class="price">₹1099</div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
