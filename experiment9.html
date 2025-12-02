@@ -29,18 +29,18 @@
         display: grid;
         gap: 20px;
 
-        /* MOBILE DEFAULT → 1 CARD */
+    
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* TABLET ≤1024px → 2 CARDS */
+
     @media (min-width: 600px) and (max-width: 1024px){
         .grid{
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    /* DESKTOP → 4 CARDS */
+
     @media (min-width: 1025px){
         .grid{
             grid-template-columns: repeat(4, 1fr);
@@ -117,4 +117,5 @@
 </div>
 
 </body>
+
 </html>
