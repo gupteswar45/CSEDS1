@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Menu Example</title>
+    <style>
+       
+        .navbar {
+            background-color: red;
+            padding: 10px;
+            display: block;
+        }
+
+        
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li {
+            display: inline-block; 
+            margin-right: 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            padding: 8px 15px;
+            color: white;
+            background-color: blue;
+        }
+
+        .navbar ul li a:hover {
+            background-color: green;
+        }
+
+       
+        .float-box {
+            width: 200px;
+            height: 150px;
+            background-color: lightblue;
+            float: left;
+            margin-right: 20px;
+            padding: 10px;
+        }
+
+        .content {
+            display: block;
+        }
+
+        
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+  
+    <div class="float-box">
+        This box is floated left.
+    </div>
+
+    <div class="content">
+        <p>
+            This is some sample text wrapping around the floated box. 
+            It shows how float works in CSS.
+        </p>
+    </div>
+
+    
+    <div class="clear"></div>
+
+    <p>This text appears below the floated box because of clear: both.</p>
+
+</body>
+</html>
