@@ -1,0 +1,15 @@
+body { 
+    height: 100vh; margin: 0; display: grid; place-items: center; background: #eee; font: 14px sans-serif; 
+}
+.container { 
+    padding: 20px; background: #fff; border-radius: 8px; width: 250px; text-align: center; 
+}
+input, button { 
+    width: 100%; padding: 8px; margin: 4px 0; box-sizing: border-box; 
+}
+button { 
+    background: #007bff; color: #fff; border: none; cursor: pointer; 
+}
+#result { 
+    margin-top: 10px; font-weight: bold; 
+}
